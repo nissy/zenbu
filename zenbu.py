@@ -5,17 +5,17 @@ from __future__ import division
 import sys
 import itertools
 
-delimiter = ', '
-
 def main():
+    kind = '- kind: Sample\n  properties:'
+    name = '\n  - name: '
     args = sys.argv[1:]
 
-    for i in range(1, len(args)):
+    for i in range(2, len(args)):
         for v in list(itertools.combinations(args, i)):
-            print(delimiter.join(v))
+            print(kind + name + name.join(v) + '\n')
 
-    if len(args) > 0:
-        print(delimiter.join(args))
+    if len(args) > 1:
+        print(kind + name + name.join(args))
 
     return 0
 

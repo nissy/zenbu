@@ -1,36 +1,67 @@
 # zenbu
 
+Aid to create index.yaml of datastore.
+
 ```
-./zenbu.py aaa bbb ccc ddd eee
-aaa
-bbb
-ccc
-ddd
-eee
-aaa, bbb
-aaa, ccc
-aaa, ddd
-aaa, eee
-bbb, ccc
-bbb, ddd
-bbb, eee
-ccc, ddd
-ccc, eee
-ddd, eee
-aaa, bbb, ccc
-aaa, bbb, ddd
-aaa, bbb, eee
-aaa, ccc, ddd
-aaa, ccc, eee
-aaa, ddd, eee
-bbb, ccc, ddd
-bbb, ccc, eee
-bbb, ddd, eee
-ccc, ddd, eee
-aaa, bbb, ccc, ddd
-aaa, bbb, ccc, eee
-aaa, bbb, ddd, eee
-aaa, ccc, ddd, eee
-bbb, ccc, ddd, eee
-aaa, bbb, ccc, ddd, eee
+./zenbu.py aaa bbb ccc ddd
+- kind: Sample
+  properties:
+  - name: aaa
+  - name: bbb
+
+- kind: Sample
+  properties:
+  - name: aaa
+  - name: ccc
+
+- kind: Sample
+  properties:
+  - name: aaa
+  - name: ddd
+
+- kind: Sample
+  properties:
+  - name: bbb
+  - name: ccc
+
+- kind: Sample
+  properties:
+  - name: bbb
+  - name: ddd
+
+- kind: Sample
+  properties:
+  - name: ccc
+  - name: ddd
+
+- kind: Sample
+  properties:
+  - name: aaa
+  - name: bbb
+  - name: ccc
+
+- kind: Sample
+  properties:
+  - name: aaa
+  - name: bbb
+  - name: ddd
+
+- kind: Sample
+  properties:
+  - name: aaa
+  - name: ccc
+  - name: ddd
+
+- kind: Sample
+  properties:
+  - name: bbb
+  - name: ccc
+  - name: ddd
+
+- kind: Sample
+  properties:
+  - name: aaa
+  - name: bbb
+  - name: ccc
+  - name: ddd
 ```
